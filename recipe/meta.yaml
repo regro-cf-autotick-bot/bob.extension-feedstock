@@ -21,11 +21,9 @@ requirements:
   build:
   - python
   - setuptools
-  - gcc     # [linux]
 
   run:
   - python
-  - libgcc  # [linux]
 
 test:
   requires:
