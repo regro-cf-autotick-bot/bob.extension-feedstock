@@ -5,7 +5,7 @@ Home: http://github.com/bioidiap/bob.extension
 
 Package license: Modified BSD License (3-clause)
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Building of Python/C++ extensions for Bob
 
