@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/bob.extension-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/bob.extension-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/bob.extension-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/bob.extension-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/bob.extension-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/bob.extension-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/bob-extension-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/bob-extension-feedstock/branch/master)
 
 Current release info
 ====================
