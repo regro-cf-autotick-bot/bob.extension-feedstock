@@ -13,9 +13,8 @@ build:
   entry_points:
   - bob_new_version.py = bob.extension.scripts:new_version
   - bob_dependecy_graph.py = bob.extension.scripts:dependency_graph
-  number: 5
+  number: 6
   skip: true  # [win]
-  script: python -B setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
