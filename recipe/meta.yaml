@@ -43,7 +43,7 @@ test:
   - bob_new_version.py --help
   - bob_dependecy_graph.py --help
   - nosetests -sv bob.extension  # [not osx]
-  - DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
+  - CFLAGS="${CFLAGS} -pthread" LDFLAGS="${LDFLAGS} -lpthread" DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
 
 about:
   home: http://github.com/bioidiap/bob.extension
