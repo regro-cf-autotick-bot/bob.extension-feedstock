@@ -6,7 +6,7 @@ package:
 
 source:
   fn: bob.extension-{{ version }}.zip
-  url: https://pypi.python.org/packages/source/b/bob.extension/bob.extension-{{ version }}.zip
+  url: https://pypi.io/packages/source/b/bob.extension/bob.extension-{{ version }}.zip
   md5: 8e8afd47c87a4f8fdf95554a4b865463
 
 build:
@@ -30,6 +30,7 @@ test:
   - boost
   - cmake
   - pkg-config
+  - freetype
   - libblitz
   - numpy
 
@@ -41,7 +42,7 @@ test:
   commands:
   - bob_new_version.py --help
   - bob_dependecy_graph.py --help
-  - nosetests -sv bob.extension --exclude=test_cflags_other --exclude=test_extensions
+  - nosetests -sv bob.extension
 
 about:
   home: http://github.com/bioidiap/bob.extension
