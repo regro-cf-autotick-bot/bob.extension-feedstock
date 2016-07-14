@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: bob.extension
@@ -7,13 +7,13 @@ package:
 source:
   fn: bob.extension-{{ version }}.zip
   url: https://pypi.io/packages/source/b/bob.extension/bob.extension-{{ version }}.zip
-  md5: 8e8afd47c87a4f8fdf95554a4b865463
+  md5: b75e77c184c81f7a7515bc965cca21e2
 
 build:
   entry_points:
     - bob_new_version.py = bob.extension.scripts:new_version
     - bob_dependecy_graph.py = bob.extension.scripts:dependency_graph
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
