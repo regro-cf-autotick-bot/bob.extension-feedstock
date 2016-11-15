@@ -3,7 +3,7 @@ About bob.extension
 
 Home: https://www.idiap.ch/software/bob/
 
-Package license: Modified BSD License (3-clause)
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `bob.extension` available on your 
 ```
 conda search bob.extension --channel conda-forge
 ```
-
 
 
 About conda-forge
