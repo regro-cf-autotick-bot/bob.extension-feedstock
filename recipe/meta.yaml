@@ -35,6 +35,7 @@ test:
     - freetype
     - libblitz
     - numpy
+    - toolchain
 
   imports:
     - bob
@@ -44,12 +45,14 @@ test:
   commands:
     - bob_new_version.py --help
     - bob_dependecy_graph.py --help
+    - export CFLAGS="${CFLAGS} -pthread"  # [unix]
+    - export LDFLAGS="${LDFLAGS} -lpthread"  # [unix]
     - nosetests -sv bob.extension  # [not osx]
-    - CFLAGS="${CFLAGS} -pthread" LDFLAGS="${LDFLAGS} -lpthread" DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
+    - DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib nosetests -sv bob.extension  # [osx]
 
 about:
   home: https://www.idiap.ch/software/bob/
-  license: Modified BSD License (3-clause)
+  license: BSD 3-Clause
   summary: Building of Python/C++ extensions for Bob
 
 extra:
