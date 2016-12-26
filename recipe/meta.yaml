@@ -36,6 +36,7 @@ test:
     - libblitz
     - numpy
     - toolchain
+    - sphinx_rtd_theme
 
   imports:
     - bob
