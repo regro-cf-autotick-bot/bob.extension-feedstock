@@ -1,4 +1,4 @@
-{% set version = "2.3.6" %}
+{% set version = "2.3.7" %}
 
 package:
   name: bob.extension
@@ -7,7 +7,7 @@ package:
 source:
   fn: bob.extension-{{ version }}.zip
   url: https://pypi.io/packages/source/b/bob.extension/bob.extension-{{ version }}.zip
-  md5: c8a21028eb252fc145a64636597d9d78
+  md5: 9e30ad3d58f64c8f6b603d916c633f95
 
 build:
   entry_points:
