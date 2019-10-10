@@ -1,0 +1,26 @@
+boost:
+- 1.70.0
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+docker_image:
+- condaforge/linux-anvil-comp7
+freetype:
+- 2.9.1
+libblitz:
+- '0.10'
+numpy:
+- '1.14'
+pin_run_as_build:
+  boost:
+    max_pin: x.x.x
+  freetype:
+    max_pin: x
+  libblitz:
+    max_pin: x.x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- '3.7'
